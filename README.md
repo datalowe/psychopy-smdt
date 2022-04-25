@@ -13,6 +13,9 @@ You can download this project, by either using the green 'code' button and selec
 ## Monitor setup
 Note that for all experiments, you will need to update the monitor settings in PsychoPy to be in agreement with your physical monitor. Please see the [official PsychoPy documentation](https://www.psychopy.org/builder/builderMonitors.html) for more information about this.
 
+## (not) Running the experiments online
+This PsychoPy implementation of the SMDT was only developed for being used locally, i.e. not online, unlike the original SMDT. It is unlikely that one could easily convert this implementation to run online, unfortunately. Moreover, the original test is written in Adobe Flash and very outdated, meaning you probably can't use that either. You might have better luck creating a new version of the SMDT from scratch. If you do, 1) you are free to use stimuli from this project, but remember to give proper credit as per below, and 2) you're very welcome to send an e-mail to datalowe-at-posteo.de so that I can add a link to your work here.
+
 ## Attribution
 The SMDT was developed at Karolinska Institutet's Department of Neuroscience by a research group led by Prof. Fredrik Ullén. This PsychoPy implementation was created by Lowe Wilsson.
 
