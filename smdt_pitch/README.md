@@ -1,4 +1,4 @@
-# PsychoPy implementation of Swedish Musical Discrimination Test: Pitch
+# PsychoPy implementation of the Swedish Musical Discrimination Test: Pitch
 This is a [PsychoPy](https://psychopy.org/) experiment implementing the "Pitch" subtest of the [Swedish Musical Discrimination Test](https://www.sciencedirect.com/science/article/pii/S0191886914000841)(SMDT) in Swedish.
 
 Each experiment trial first plays two tones for the participant. The participant is then to respond, with a keyboard, by indicating whether the second tone was higher (pitch-wise) or lower than the first of the two tones. There are 27 trials, with progressively decreasing difference in frequency between the first and second tone as follows:

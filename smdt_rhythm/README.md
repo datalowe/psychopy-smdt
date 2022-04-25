@@ -1,4 +1,4 @@
-# PsychoPy implementation of Swedish Musical Discrimination Test: Rhythm
+# PsychoPy implementation of the Swedish Musical Discrimination Test: Rhythm
 This is a [PsychoPy](https://psychopy.org/) experiment implementing the "Rhythm" subtest of the [Swedish Musical Discrimination Test](https://www.sciencedirect.com/science/article/pii/S0191886914000841)(SMDT) in Swedish.
 
 Each experiment trial first plays two rhythms for the participant. The participant is then to respond, with a keyboard, by indicating whether the two rhythms were identical or not. There are 18 trials.

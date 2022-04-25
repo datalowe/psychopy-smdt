@@ -1,4 +1,4 @@
-# PsychoPy implementation of Swedish Musical Discrimination Test: Melody
+# PsychoPy implementation of the Swedish Musical Discrimination Test: Melody
 This is a [PsychoPy](https://psychopy.org/) experiment implementing the "Melody" subtest of the [Swedish Musical Discrimination Test](https://www.sciencedirect.com/science/article/pii/S0191886914000841)(SMDT) in Swedish.
 
 Each experiment trial first plays two sequences of tones for the participant. The participant is then to respond, with a mouse, by indicating which tone differed between the two sequences. The sequences increase in length, from 4 tones up to 9 tones, where each 'difficulty level' includes 3 trials. In total, there are 27 trials.

@@ -1,4 +1,4 @@
-# PsychoPy implementation of Swedish Musical Discrimination Test
+# PsychoPy implementation of the Swedish Musical Discrimination Test
 <img width="600px" alt="An example screenshot of the Melody subtest." src="./example_images/melody_ex.png">
 
 <img width="600px" alt="An example screenshot of the Pitch subtest." src="./example_images/pitch_ex.png">
