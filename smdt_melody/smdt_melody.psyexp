@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.1.2">
+  <Settings>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="sounddevice" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="html" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="packaged" valType="str" updates="None" name="JS libs"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="fileList" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="deg" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1280, 800]" valType="code" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[1,1,1]" valType="str" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="smdt_melody" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="debug" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <CodeComponent name="code">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from random import choice, randint&amp;#10;from copy import deepcopy&amp;#10;&amp;#10;&amp;#10;# SMDT ARTICLE: &quot;... tones in the range C4–B5...&quot; means that&amp;#10;# 12 tones are selected from&amp;#10;def jump_within_octave(prev_tones, low_bound, up_bound):&amp;#10;    &quot;&quot;&quot;&amp;#10;    returns a random integer that is within the provided lower and upper bound&amp;#10;    as well as within -+11 from the last prev_tones value&amp;#10;    :param prev_tones: list of integers indicating positions of previous tones&amp;#10;    :param low_bound: lower bound of allowed position values&amp;#10;    :param up_bound: upper bound of allowed position values&amp;#10;    :return: integer indication tone positioned &lt;1 octave away from the previous one&amp;#10;    &quot;&quot;&quot;&amp;#10;    last_prev_tone = prev_tones[len(prev_tones)-1]&amp;#10;    # if the lower bound is at least one octave below the previous tone, allow for values&amp;#10;    # up to 11 semitones below the previous tone&amp;#10;    lower_allowed = last_prev_tone-11 if last_prev_tone-11 &gt; low_bound else low_bound&amp;#10;    higher_allowed = last_prev_tone+11 if last_prev_tone+11 &lt; up_bound else up_bound&amp;#10;    prel_choice_ls = list(range(lower_allowed, higher_allowed))  # get list of of tones [lower_allowed, higher_allowed]&amp;#10;    choice_ls = []&amp;#10;    for tone_val in prel_choice_ls:&amp;#10;        if tone_val not in prev_tones:  # check for each tone if it's already in the list of tone positions&amp;#10;            choice_ls.append(tone_val)&amp;#10;    return choice(choice_ls)&amp;#10;&amp;#10;&amp;#10;def is_tonal(tone_ls):&amp;#10;    &quot;&quot;&quot;&amp;#10;    checks if a list of tone positions fits any of the tonal scale patterns&amp;#10;    :param tone_ls: list of integers indicating positions of tones&amp;#10;    :return: boolean - True if input tone positions do fit one of the tonal scales&amp;#10;    &quot;&quot;&quot;&amp;#10;    lowest_tone = min(tone_ls)&amp;#10;    # form list of tone positions relative to lowest tone position in input tone_ls&amp;#10;    rel_tone_ls = [tone-lowest_tone for tone in tone_ls]&amp;#10;    # defining the different tonal scale patterns&amp;#10;    major_ls = [0, 2, 4, 5, 7, 9, 11]&amp;#10;    asc_minor_ls = [0, 2, 3, 5, 7, 9, 11]&amp;#10;    desc_minor_ls = [0, 2, 3, 5, 7, 8, 10]&amp;#10;    harm_minor_ls = [0, 2, 3, 5, 7, 8, 11]&amp;#10;    all_scales = [major_ls, asc_minor_ls, desc_minor_ls, harm_minor_ls]&amp;#10;    for scale in all_scales:&amp;#10;        # form a set with all tone positions in scale&amp;#10;        scale_set = set(scale + [tone_pos+12 for tone_pos in scale])&amp;#10;        # go through each starting position up to 11 and compare the tone list's positions&amp;#10;        # with the list of scale tone positions&amp;#10;        for start_pos in range(12):&amp;#10;            rel_tone_set = set([tone_pos+start_pos for tone_pos in rel_tone_ls])&amp;#10;            # if all the tone_ls's positions are in the scalar tone positions,&amp;#10;            # return True (as this means the tone distances are in accordance with&amp;#10;            # a tonal scale's positions)&amp;#10;            if rel_tone_set.issubset(scale_set):&amp;#10;                return True&amp;#10;    # if the for loop doesn't find a matching scale, say that the tones do not fit a tonal scale pattern&amp;#10;    return False&amp;#10;&amp;#10;&amp;#10;def gen_atonal_sequence(n_tones, max_tone_pos):&amp;#10;    &quot;&quot;&quot;&amp;#10;    generates an atonal sequence of tone positions spanning a maximum of as many semitones as specified&amp;#10;    :param n_tones: integer specifying number of tones to generate&amp;#10;    :param max_tone_pos: integer specifying maximum tone position (in number of semitones)&amp;#10;    :return: list of tone positions&amp;#10;    &quot;&quot;&quot;&amp;#10;    assert n_tones &gt; 3, &quot;too few notes, need to generate at least 4&quot;&amp;#10;    while True:&amp;#10;        # randomly pick first tone position&amp;#10;        tone_ls = [randint(0, max_tone_pos)]&amp;#10;        # generate tones by jumping within octave (each jump based on latest value of tone_ls)&amp;#10;        for foo in range(n_tones-1):&amp;#10;            tone_ls.append(jump_within_octave(tone_ls,&amp;#10;                                              low_bound=0, up_bound=max_tone_pos))&amp;#10;        # if the generated tones are tonal/fit into a tonal scale, skip to next loop iteration&amp;#10;        if is_tonal(tone_ls):&amp;#10;            continue&amp;#10;        return tone_ls&amp;#10;&amp;#10;&amp;#10;def conv_pos_c4(pos_ls):&amp;#10;    &quot;&quot;&quot;&amp;#10;    takes in a list of tone positions and converts them to tone names, assuming that 0 corresponds&amp;#10;    to the tone C4&amp;#10;    :param pos_ls: list of tone positions&amp;#10;    :return: list of string elements, each with a tone specification, e. g. &quot;C#4&quot;&amp;#10;    &quot;&quot;&quot;&amp;#10;    tone_names = [&amp;#10;      &quot;C4&quot;, &quot;C#4&quot;, &quot;D4&quot;, &quot;D#4&quot;, &quot;E4&quot;, &quot;F4&quot;, &quot;F#4&quot;, &quot;G4&quot;, &amp;#10;      &quot;G#4&quot;, &quot;A4&quot;, &quot;A#4&quot;, &quot;B4&quot;, &quot;C5&quot;, &quot;C#5&quot;, &quot;D5&quot;, &quot;D#5&quot;, &amp;#10;      &quot;E5&quot;, &quot;F5&quot;, &quot;F#5&quot;, &quot;G5&quot;, &quot;G#5&quot;, &quot;A5&quot;, &quot;A#5&quot;&amp;#10;    ]&amp;#10;    out_names = [tone_names[pos] for pos in pos_ls]&amp;#10;    return out_names&amp;#10;&amp;#10;&amp;#10;def shift_one_tone(pos_ls, min_allowed, max_allowed):&amp;#10;    &quot;&quot;&quot;&amp;#10;    Takes in a list of tone positions, creates a copy and shifts one of&amp;#10;    the positions in the copy. The shift is done so that if the tone was&amp;#10;    below a preceding tone, it will stay below that tone, and if it was&amp;#10;    above the preceding tone, it will stay that way. The same goes for&amp;#10;    if the tone is followed by another tone - the relationship has to&amp;#10;    stay the same. Also, the new tone is not allowed to be the same as&amp;#10;    any of the other tones. The return value indicates the new list of&amp;#10;    tone positions, and an integer representing the list index of the&amp;#10;    changed tone position.&amp;#10;    :param pos_ls: list of tone positions&amp;#10;    :param min_allowed: minimum (inclusive) allowed tone position value&amp;#10;    :param max_allowed: maximum (inclusive) allowed tone position value&amp;#10;    :return: tuple of list of integers and single integer&amp;#10;    &quot;&quot;&quot;&amp;#10;    while True:&amp;#10;        shift_ls = deepcopy(pos_ls)&amp;#10;        # add &quot;extra&quot; tones at beginning/end, to ensure that the likelihood&amp;#10;        # of the first/last tone in the actual sequence being shifted is&amp;#10;        # about the same as the likelihood for each of the 'middle' tones&amp;#10;        # being shifted (ie there are similar constraints for all tones)&amp;#10;        shift_ls.insert(&amp;#10;            0, &amp;#10;            jump_within_octave(shift_ls[::-1], min_allowed, max_allowed)&amp;#10;        )&amp;#10;        shift_ls.append(&amp;#10;            jump_within_octave(shift_ls, min_allowed, max_allowed)&amp;#10;        )&amp;#10;        min_bound = min_allowed&amp;#10;        max_bound = max_allowed&amp;#10;        # randomly pick one of the tone positions&amp;#10;        rand_ind = randint(1, len(shift_ls)-2)&amp;#10;        rand_pos = shift_ls[rand_ind]&amp;#10;        pre_pos = shift_ls[rand_ind-1]  # grab the preceding tone pos&amp;#10;        if pre_pos &gt; rand_pos:  # if preceding tone is above the randomly picked one&amp;#10;            max_bound = pre_pos - 1&amp;#10;            min_bound = pre_pos - 11 if pre_pos - 11 &gt; min_bound else min_bound&amp;#10;        elif pre_pos &lt; rand_pos:  # if preceding tone below the randomly picked one&amp;#10;            min_bound = pre_pos + 1&amp;#10;            max_bound = pre_pos + 11 if pre_pos+11 &lt; max_bound else max_bound&amp;#10;        fol_pos = shift_ls[rand_ind+1]  # grab the following tone pos&amp;#10;        if fol_pos &gt; rand_pos:  # if following tone is above the randomly picked one&amp;#10;            max_bound = fol_pos - 1 if fol_pos - 1 &lt; max_bound else max_bound&amp;#10;            min_bound = fol_pos - 11 if fol_pos - 11 &gt; min_bound else min_bound&amp;#10;        elif fol_pos &lt; rand_pos:  # if following tone below the randomly picked one&amp;#10;            min_bound = fol_pos + 1 if fol_pos + 1 &gt; min_bound else min_bound&amp;#10;            max_bound = fol_pos + 11 if fol_pos + 11 &lt; max_bound else max_bound&amp;#10;        if max_bound == min_bound:  # if the randomly picked tone is squeezed in position by surrounding tone(s)&amp;#10;            continue&amp;#10;        # include tone positions in the range of min_bound and max_bound&amp;#10;        # (inclusive), except for tone positions already used in the passed&amp;#10;        # pos_ls&amp;#10;        eligible_choices = set(range(min_bound, max_bound+1)) - set(pos_ls)&amp;#10;        # convert to tuple to enable use of random.choice&amp;#10;        eligible_choices = tuple(eligible_choices)&amp;#10;        # if there are no valid tone positions to replace this tone with,&amp;#10;        # start over to try replacing another tone in the list&amp;#10;        if len(eligible_choices) &lt;= 0:&amp;#10;            continue&amp;#10;        new_pos = choice(eligible_choices)&amp;#10;        shift_ls[rand_ind] = new_pos&amp;#10;        # if the list of tone positions ends up scalar after note shift,&amp;#10;        # start over &amp;#10;        if is_tonal(shift_ls[1:-1]):&amp;#10;            continue&amp;#10;        # drop the 'extra' random tone positions added to start/end of&amp;#10;        # the list, just before the loop started&amp;#10;        return shift_ls[1:-1], rand_ind-1&amp;#10;&amp;#10;&amp;#10;# generate a dictionary that will be used for grabbing filenames of each &amp;#10;# tone's sound file (make sure that the .wav files are stored in a project &amp;#10;# subdirectory named 'stimuli')&amp;#10;tone_names = [&amp;#10;  &quot;C4&quot;, &quot;C#4&quot;, &quot;D4&quot;, &quot;D#4&quot;, &quot;E4&quot;, &quot;F4&quot;, &quot;F#4&quot;, &quot;G4&quot;, &amp;#10;  &quot;G#4&quot;, &quot;A4&quot;, &quot;A#4&quot;, &quot;B4&quot;, &quot;C5&quot;, &quot;C#5&quot;, &quot;D5&quot;, &quot;D#5&quot;, &amp;#10;  &quot;E5&quot;, &quot;F5&quot;, &quot;F#5&quot;, &quot;G5&quot;, &quot;G#5&quot;, &quot;A5&quot;, &quot;A#5&quot;&amp;#10;]&amp;#10;tone_file_dict = {tname: 'stimuli/'+tname+'.wav' for tname in tone_names}&amp;#10;&amp;#10;# generate three-element tuples with atonal sequences that will be used for&amp;#10;# each trial&amp;#10;trial_seq = []&amp;#10;for num_tones in range(4, 10):  # sequences should have 4-9 tones each&amp;#10;    # counter for number of sequences with num_tones tones that have&amp;#10;    # been generated&amp;#10;    seq_counter = 0&amp;#10;    iter_seq = []&amp;#10;    while seq_counter &lt; 3:  # there should be 3 variations of each sequence&amp;#10;        new_seq = gen_atonal_sequence(num_tones, len(tone_names)-1)&amp;#10;        # if the generated sequence is a duplicate of a previous one&amp;#10;        if new_seq in iter_seq:&amp;#10;            continue  # restart the while loop&amp;#10;        iter_seq.append(new_seq)&amp;#10;        # shift one tone of generated list and store as separate list.&amp;#10;        # also get the list index of the shifted tone&amp;#10;        alt_seq, alt_pos = shift_one_tone(new_seq, 0, len(tone_names)-1)&amp;#10;        # append tuple of generated+shifted list, after converting them to&amp;#10;        # character representations of tones, +shifted tone index&amp;#10;        trial_seq.append(&amp;#10;            (conv_pos_c4(new_seq),&amp;#10;            conv_pos_c4(alt_seq),&amp;#10;            alt_pos)&amp;#10;        )&amp;#10;        seq_counter += 1&amp;#10;&amp;#10;# set total number of trials based on the number of atonal sequences&amp;#10;n_loops = len(trial_seq)&amp;#10;&amp;#10;# initialize counter that will be used for going through the trials' tuples&amp;#10;trial_counter = 0&amp;#10;&amp;#10;# initialize audio stimulus objects and assign them as values in a &quot;tone-component&amp;#10;# dictionary&quot;&amp;#10;tone_comp_dict = {}&amp;#10;for key in tone_file_dict:&amp;#10;    tone_comp_dict[key] = sound.Sound(tone_file_dict[key], secs=0.5, stereo=True, hamming=False,&amp;#10;                                                                  name='melody_sound')&amp;#10;&amp;#10;# initialize visual stimuli objects&amp;#10;tone_square = visual.Rect(&amp;#10;    win=win, name='tone_square', units='deg',&amp;#10;    width=2, height=2,&amp;#10;    ori=0, pos=(0, 3),&amp;#10;    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',&amp;#10;    fillColor=[0,0,0], fillColorSpace='rgb',&amp;#10;    opacity=1, depth=-1.0, interpolate=True)&amp;#10;&amp;#10;# set leftmost square's position&amp;#10;square_1_xcoord = -13&amp;#10;&amp;#10;# create list of boxes/squares that indicate which tone is being played&amp;#10;tone_square_ls = []&amp;#10;# create list of text components for numbering the squares&amp;#10;tone_number_ls = []&amp;#10;for num, xpos in enumerate(np.arange(-14, 15, 3.5)):&amp;#10;    new_rect = visual.Rect(&amp;#10;        win=win, name='tone_square_' + str(num+1),units='deg', &amp;#10;        width=(2, 2)[0], height=(2, 2)[1],&amp;#10;        ori=0, pos=(xpos, 3),&amp;#10;        lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',&amp;#10;        fillColor=[0,0,0], fillColorSpace='rgb',&amp;#10;        opacity=1, depth=-1.0, interpolate=True)&amp;#10;    new_text = visual.TextStim(win=win, name='text_num_' + str(num+1),&amp;#10;        text=str(num+1), units='deg',&amp;#10;        font='Arial',&amp;#10;        pos=(xpos, 3), height=0.5, wrapWidth=None, ori=0, &amp;#10;        color='white', colorSpace='rgb', opacity=1, &amp;#10;        languageStyle='LTR',&amp;#10;        depth=-3.0);&amp;#10;    tone_square_ls.append(new_rect)&amp;#10;    tone_number_ls.append(new_text)&amp;#10;&amp;#10;&amp;#10;# define colors used for first/second melody, for neutral/active squares&amp;#10;first_neutral_color = [0, 0, 0]&amp;#10;second_neutral_color = [0.5, -0.5, -0.5]&amp;#10;first_active_color = [-1, -1, -1]&amp;#10;second_active_color = [1, 0, 0]&amp;#10;# define color used for clicked square&amp;#10;clicked_color = [1, 0.3, -1]&amp;#10;&amp;#10;# create text component that holds trial instructions&amp;#10;# (cannot simply use Builder component for this, because changing opacity &amp;#10;# doesn't work properly for text components, and we therefore want to be &amp;#10;# able to control when the component should be drawn)&amp;#10;text_trial = visual.TextStim(win=win, name='text_trial',&amp;#10;    text='Klicka på tonen som var annorlunda i den andra melodin',&amp;#10;    font='Arial', units='deg',&amp;#10;    pos=(0, -7), height=0.7, wrapWidth=20, ori=0, &amp;#10;    color='black', colorSpace='rgb', opacity=1.0, &amp;#10;    languageStyle='LTR',&amp;#10;    depth=-3.0);&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="# initialize variable that keeps track of time when last played sound started&amp;#10;flips_since_last_sound = 3000  # high value to make sure that the sound is played as soon as possible&amp;#10;&amp;#10;# fetch sequences - first and (shifted) second&amp;#10;trial_first_seq = trial_seq[trial_counter][0]&amp;#10;trial_second_seq = trial_seq[trial_counter][1]&amp;#10;&amp;#10;# initialize counter for stepping through all tones in each sequence&amp;#10;tone_counter = 0&amp;#10;tone_count_max = len(trial_first_seq)  # get the number of tones in sequences&amp;#10;&amp;#10;# initialize value that indicates if playing first or second sequence at the moment&amp;#10;first_or_second = 'first'&amp;#10;&amp;#10;# get xcoords for where to place the squares indicating different&amp;#10;# tones (going left-to-right)&amp;#10;square_xcoords = [square_1_xcoord +n*3.5 for n in range(tone_count_max)]&amp;#10;&amp;#10;# reset timing/event-related variables&amp;#10;text_trial.opacity = 0&amp;#10;neutral_color = first_neutral_color&amp;#10;active_color = first_active_color&amp;#10;quit_in_1s = False&amp;#10;quit_countdown_flips = 60&amp;#10;trial_start_time = tThisFlipGlobal + 0&amp;#10;&amp;#10;# set melody_sound variable to point at the sound component representing &amp;#10;# the first sequence's first tone's sound&amp;#10;this_tone = trial_first_seq[tone_counter]&amp;#10;melody_sound = tone_comp_dict[this_tone]" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="flips_since_last_sound += 1&amp;#10;# if at least 39 flips/frames have passed (meaning 0.65s, for a standard computer monitor)&amp;#10;if flips_since_last_sound &gt;= 39 and first_or_second !='neither':&amp;#10;    melody_sound.stop()&amp;#10;    # if already stepped through/played all tones in sequence&amp;#10;    if tone_counter &gt;= tone_count_max:&amp;#10;        if first_or_second == 'first':&amp;#10;            first_or_second = 'second'&amp;#10;            tone_counter = 0&amp;#10;            # ensure that 1.3s pass between last tone of first sequence &amp;#10;            # being played, and first tone of second sequence being &amp;#10;            # played, by making the program wait an additional 39 frames&amp;#10;            flips_since_last_sound = -39&amp;#10;            for square in tone_square_ls:&amp;#10;                square.fillColor = second_neutral_color&amp;#10;                neutral_color = second_neutral_color&amp;#10;                active_color = second_active_color&amp;#10;        else:&amp;#10;            first_or_second = 'neither'&amp;#10;            tone_counter = 9999&amp;#10;            trial_mouse.status = STARTED&amp;#10;            text_trial.opacity = 1&amp;#10;            allowed_response_time = tThisFlipGlobal&amp;#10;    else:&amp;#10;        if first_or_second == 'first':&amp;#10;            this_tone = trial_first_seq[tone_counter]&amp;#10;        else:&amp;#10;            this_tone = trial_second_seq[tone_counter]&amp;#10;        melody_sound = tone_comp_dict[this_tone]&amp;#10;        melody_sound.play()&amp;#10;        flips_since_last_sound = 0&amp;#10;        tone_counter += 1&amp;#10;&amp;#10;# draw each tone-related square and number&amp;#10;for sq_num in range(tone_count_max):&amp;#10;    # only change colors if not in process of quitting routine&amp;#10;    if not quit_in_1s:&amp;#10;        # the tone counter will always be one step ahead of the tone currently &amp;#10;        # being played here, so the square corresponding to the number one &amp;#10;        # below the tone counter should light up&amp;#10;        if sq_num == tone_counter-1:&amp;#10;            tone_square_ls[sq_num].fillColor = active_color&amp;#10;        else:&amp;#10;            tone_square_ls[sq_num].fillColor = neutral_color&amp;#10;        if first_or_second == 'neither':&amp;#10;            text_trial.draw()&amp;#10;    tone_square_ls[sq_num].draw()&amp;#10;    tone_number_ls[sq_num].draw()&amp;#10;&amp;#10;if trial_mouse.status == STARTED:  # only update if started and not finished!&amp;#10;    buttons = trial_mouse.getPressed()&amp;#10;    if buttons != prevButtonState:  # button state changed?&amp;#10;        prevButtonState = buttons&amp;#10;        if sum(buttons) &gt; 0:  # state changed to a new click&amp;#10;            # check if the mouse was inside our 'clickable' objects&amp;#10;            gotValidClick = False&amp;#10;            for obj in tone_square_ls[:tone_count_max]:&amp;#10;                if obj.contains(trial_mouse):&amp;#10;                    gotValidClick = True&amp;#10;                    obj.fillColor = clicked_color&amp;#10;                    trial_mouse.clicked_name.append(obj.name)&amp;#10;                    got_response_time = tThisFlipGlobal&amp;#10;            if gotValidClick:  # quit in 1s&amp;#10;                quit_in_1s = True&amp;#10;&amp;#10;if quit_in_1s:&amp;#10;    quit_countdown_flips -= 1&amp;#10;    if quit_countdown_flips &lt;= 0:&amp;#10;        continueRoutine = False&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# check if response was correct or not&amp;#10;correct_index = trial_seq[trial_counter][2]&amp;#10;correct_name = tone_square_ls[correct_index].name&amp;#10;response_correct = correct_name in trial_mouse.clicked_name&amp;#10;&amp;#10;# check response time&amp;#10;trial_response_time = got_response_time - allowed_response_time&amp;#10;&amp;#10;# save the data&amp;#10;trials.addData('trial_start_time', trial_start_time)&amp;#10;trials.addData('trial_response_time', trial_response_time)&amp;#10;trials.addData('correct_name', correct_name)&amp;#10;trials.addData('clicked_name', '|'.join(trial_mouse.clicked_name))&amp;#10;trials.addData('response_correct', int(response_correct))&amp;#10;trials.addData('first_melody', trial_first_seq)&amp;#10;trials.addData('second_melody', trial_second_seq)&amp;#10;&amp;#10;trial_counter += 1&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <MouseComponent name="trial_mouse">
+        <Param val="'placeholder'" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="trial_mouse" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="" valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="9999" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="text_instructions">
+        <Param val="black" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.8" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_instructions" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="I det här testet får du höra melodier. Du kommer att höra två melodier i varje uppgift. Inom varje par av melodier skiljer sig bara en ton.&amp;#10;&amp;#10;Din uppgift är att avgöra vid vilken position i melodierna som tonen skiljer sig. När melodierna spelats klart får du klicka med vänster musknapp på den position som du tror är den rätta.&amp;#10;&amp;#10;Klicka med vänster musknapp på texten nedanför när du är redo att börja.&amp;#10;" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="30" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <MouseComponent name="mouse_instructions">
+        <Param val="text_instructions_start" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="valid click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_instructions" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="" valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <TextComponent name="text_instructions_start">
+        <Param val="black" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.6" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_instructions_start" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, -10)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Klicka här när du läst färdigt och är redo" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="deg" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="end_message">
+      <TextComponent name="text_end">
+        <Param val="black" valType="str" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="" valType="str" updates="constant" name="flip"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.8" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="text_end" valType="code" updates="None" name="name"/>
+        <Param val="1" valType="code" updates="constant" name="opacity"/>
+        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Nu är det här testet slut.&amp;#10;&amp;#10;Mata vänligen in ditt deltagar-ID för nästa test." valType="extendedStr" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="n_loops" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end_message"/>
+  </Flow>
+</PsychoPy2experiment>

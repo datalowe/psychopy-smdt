@@ -1,0 +1,7 @@
+smdt_melody/.git/
+smdt_pitch/.git/
+smdt_rhythm/.git/
+.DS_Store
+*.swp
+.idea/
+extra_scripts_stimuli_generation/smdt_pitch_gen_stimuli/.git/
