@@ -1,4 +1,10 @@
-# PsychoPy implementation of Swedish Musical Discrimination Test: Rhythm
+# PsychoPy implementation of Swedish Musical Discrimination Test
+<img width="600px" alt="An example screenshot of the Melody subtest." src="./example_images/melody_ex.png">
+
+<img width="600px" alt="An example screenshot of the Pitch subtest." src="./example_images/pitch_ex.png">
+
+<img width="600px" alt="An example screenshot of the Rhythm subtest." src="./example_images/rhythm_ex.png">
+
 This is a collection of [PsychoPy](https://psychopy.org/) experiments implementing the [Swedish Musical Discrimination Test](https://www.sciencedirect.com/science/article/pii/S0191886914000841)(SMDT) in Swedish. Each subtest of the SMDT is implemented as a stand-alone PsychoPy experiment, each placed in its own subdirectory in this code repository. Please see the README files in the subdirectories for more information on each experiment, e.g. instructions on how to translate or run them. (on GitHub, you can click a folder in the 'code view' at the top to see the README for that folder)
 
 ## Downloading all the experiment files from GitHub
